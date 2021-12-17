@@ -54,7 +54,7 @@ function checkElement(){
     let url = links.href;
     
     let image = document.getElementById("imaji");
-    let imgsources = image.src.split("Raava");
+    let imgsources = image.src.split("_Chrome_Extension/");
     let imgsource = imgsources[1];
     console.log(imgsources);
     console.log(imgsource);
