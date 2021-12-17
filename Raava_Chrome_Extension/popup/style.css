@@ -1,0 +1,82 @@
+/* Font */
+@font-face {
+    font-family: 'FontUtama';
+    src: url(../Fonts/Asap-Symbol-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'FontJudul';
+    src: url(../Fonts/Asap-Symbol-webfont.woff) format('woff');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 5px rgba(10,10,10,.2);
+}
+
+.container .wrapper {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.container .wrapper .theme {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    position: relative;
+    padding-left: 10px;
+} 
+
+.container .wrapper .theme span {
+    padding-top: 30px;
+    font-size: 13px;
+    font-family: 'FontJudul';
+}
+
+.container .wrapper .theme p {
+    position: absolute;
+    margin-top: 60px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.container img {
+    width: 100%;
+}
+
+.container .content {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.container .content .button {
+    height: 50px;
+    color: #383838;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'FontUtama';
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px rgba(10,10,10,.2);
+    transition: .3s;
+}
+
+.container .content .button:hover {
+    background-image: linear-gradient(#21e9ff, #003da6);
+    color: white;
+    border-left: 10px solid;
+    border-left-color: #202263;
+}
+
+.container .content .button span {
+    margin-left: 20px;
+}
+
+
